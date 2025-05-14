@@ -1,136 +1,163 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-  font-family: 'Nunito', sans-serif;
-  line-height: 1.6;
-  background: white;
-  color: black;
+    font-family: "Roboto", Arial, sans-serif;
 }
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.navbar .logo {
-  font-weight: 700;
-  font-size: 1.5em;
-}
-
-.nav-links {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: gray;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color:lightcoral;
-}
-
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-}
-
-/* Hero Section */
-.hero {
-  background: url('images/hero.jpg') no-repeat center center/cover;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 0 20px;
-}
-
-.hero-content h1 {
-  font-size: 3em;
-  margin-bottom: 0.5em;
-}
-
-.btn-primary {
-  background-color: #ff5a5f;
-  color: white;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-top: 1em;
-  display: inline-block;
-}
-
-/* Listings Section */
-.listings {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  margin-top: 20px;
-}
-
-.card {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  background: white;
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 15px;
-}
-
-/* Footer */
-footer {
-  padding: 20px;
-  text-align: center;
-  background: white;
-  font-size: 0.9em;
-}
-
-/* Responsive Nav */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    right: 20px;
-    top: 70px;
-    width: 200px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  }
-
-  .nav-links.show {
+nav {
     display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
+   flex-direction: row; 
+   justify-content: space-around;
+   margin-bottom: 80px;
 }
+
+.navigation {
+     display: flex;
+   flex-direction: row; 
+   justify-content: space-around;
+   gap: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.get-a-quote {
+    color: white;
+    border: 2px solid blue;
+    padding: 5px 5px 5px 5px;
+    border-radius: 3px;
+    background-color: blue;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/business.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 60px;
+}
+
+.header-text {
+    max-width: 50%;
+    margin-left: 120px;
+    
+}
+
+.small-space {
+    margin-bottom: 0;
+}
+
+
+.text-bigger {
+    font-size: 62px;
+}
+
+.what-we-do {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+
+.what-we-do-text {
+    text-align: center;
+}
+
+.success-stories-text {
+    text-align: center;
+    
+}
+
+.success-stories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 5px solid red; */
+    /* padding: 20px 20px 20px 20px; */
+}
+
+
+
+.blog-text {
+    text-align: center;
+}
+
+
+.blogs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.contact-us {
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* form {
+    margin: 0 auto;
+    width: 250px;
+    margin-right: 90px;
+    border: 5px solid red;
+    margin-left: px;
+    align-items: center;
+} */
+
+.contact{
+    display: flex;
+    justify-content: center;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 80%;
+  height: 80%;
+}
+
+
+
+.underline {
+    text-decoration: underline;
+}
+
+.sucess-img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 80%;
+  height: 80%
+}
+
+form {
+    border: 5px solid black;
+    width: 60%;
+    height: 60%;
+    padding: 20px 20px 20px 20px;
+    border-radius: 4px;
+}
+
+input, label, select {
+    width: 100%;
+    
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    margin-top: 60px;
+    background-color: blue;
+}
+

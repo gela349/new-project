@@ -1,58 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AngelaBnB - Explore Unique Places</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Opportunity</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">AngelaBnB</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Explore</a></li>
-        <li><a href="#">Host</a></li>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Sign In</a></li>
-      </ul>
-      <div class="menu-toggle">☰</div>
-    </nav>
-  </header>
+    <!-- Header -->
+     <header>
+        <nav >
+            <div><a href="" class="text-white text-bold">Coastal Cottages</a></div>
+            <div class="navigation" >
+                <a href="" class="text-white">Home</a>
+                
+                <a href="#services" class="text-white">Services</a>
+                <a href="#case-study" class="text-white">Case Study</a>
+                
+                <a href="#blog" class="text-white">Blog</a>
+                <a href="#contact" class="text-white">Contact</a>
+            </div>
+            <div>
+                <a href=""><button class="get-a-quote">Get a Quote</button></a>
+            </div>
+        </nav>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Find Your Next Adventure</h1>
-      <p>Book unique places to stay and things to do.</p>
-      <a href="#" class="btn-primary">Start Exploring</a>
+        <div class="header-text">
+            <div>
+                <h1 class="text-white text-bigger">Big Opportunity <br> For Your Business</h1>
+        
+            </div>
+        <a href=""><button class="get-a-quote">Our Services</button></a>
     </div>
-  </section>
+        
+     </header>
 
-  <section class="listings">
-    <h2>Featured Listings</h2>
-    <div class="card-container">
-      <div class="card">
-        <img src="images/hero.jpg" alt="Beach House">
-        <div class="card-content">
-          <h3>Beachfront Escape</h3>
-          <p>Relax in this tropical paradise just steps from the ocean.</p>
+     
+
+
+     <!-- what we do -->
+     <section id="services">
+        <h2 class="what-we-do-text">Services</h2>
+        <div class="what-we-do">
+            <div>
+                <img src="./images/service1.jpg" alt="" width="3680px" height="2456px">
+                <p>At Coastal Cottages, we specialize in delivering tailored solutions that align with your unique goals and business objectives. Whether you're seeking strategic consulting, efficient project management, or technology implementation, our experienced team is equipped to provide end-to-end support. </p>
+                
+            </div>
+            <div>
+                <img src="./images/service2.jpg" alt="" width="3680px" height="2456px">
+                <p>We offer a comprehensive suite of services designed to enhance performance and drive sustainable growth. From initial planning and analysis to execution and optimization, we bring a disciplined, results-driven approach to every engagement.</p>
+            </div>
+            <div>
+                <img src="./images/service3.jpg" alt="" width="3680px" height="2456px">
+                <p>Partnering with us means gaining a dedicated team that values long-term relationships and continuous improvement. We work closely with our clients to identify opportunities, overcome challenges, and unlock their full potential. Let us help you move forward with clarity, confidence, and a competitive edge</p>
+            </div>
         </div>
-      </div>
-      <div class="card">
-        <img src="images/hero.jpg" alt="Mountain Cabin">
-        <div class="card-content">
-          <h3>Mountain Retreat</h3>
-          <p>Reconnect with nature in this cozy mountaintop cabin.</p>
+        
+     </section>
+
+     <!-- Case Study -->
+     <section id="case-study" class="new-story">
+        <h2 class="success-stories-text">Success Stories</h2>
+        <div class="success-stories">
+            <div>
+                <img class="sucess-img" src="./images/success1.jpg" alt="" >
+                <p>Over the years, we've partnered with organizations across diverse industries to help them solve complex challenges and achieve remarkable outcomes. From streamlining operations to launching new digital platforms, our solutions have consistently delivered measurable impact</p>
+            </div>
+            <div>
+                <img class="sucess-img" src="./images/success2.jpg" alt="">
+                <p> By conducting a comprehensive needs assessment and deploying a customized software solution, we helped them reduce manual workload by 40% and increase overall efficiency.</p>
+            </div>
+            
         </div>
-      </div>
-      <!-- Add more cards as needed -->
+        
+     </section>
+
+     <!-- Blog -->
+     <section id="blog" class="new-blog">
+        <h2 class="blog-text">Blog</h2>
+        <div class="blogs">
+            <div>
+                <img class="small-image" src="./images/blog2.jpg" alt="">
+                <p>Stay informed with expert insights, industry trends, and practical tips through our regularly updated blog. Whether you're a business leader or a curious professional, you'll find valuable content designed to help you stay ahead</p>
+            </div>
+            <div>
+                <img src="./images/blog3.jpg" alt="">
+                <p>From case studies to thought leadership articles, our blog is where knowledge meets action. Explore the latest updates and discover how innovation and strategy come together in real-world applications</p>
+            </div>
+            
+        </div>
+        
+     </section>
+
+     <!-- Contact Forms -->
+      <h2 class="contact-us">Contact Us</h2>
+
+<div class="contact" id="contact">
+    
+  <form class="">
+
+    
+
+
+
+    <div>
+        <label for="fname">First Name</label><br>
+        <br>
+        <input type="text" id="" name="firstname" placeholder="Your name.."><br>
+        <br>
     </div>
-  </section>
+    <div>
+        <label for="lname">Last Name</label><br>
+        <br>
+        <input type="text" id="" name="lastname" placeholder="Your last name.."><br>
+        <br>
+    </div>
+    <div>
+        <label for="country">Country</label><br>
+        <br>
+        <input type="text" id=""  placeholder="Your country.."><br>
+        <br>
+    </div>
+     <div>
+        <label for="email">Email</label><br>
+        <br>
+        <input type="text" id=""  placeholder="Your email.."><br>
+        <br>
+    </div>
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+    
 
-  <footer>
-    <p>&copy; 2025 AngelaBnB. All rights reserved.</p>
-  </footer>
+    
+
+    
+  </form>
+</div>
+
+<footer>
+    &copy copyright 2025 Coastal Cottages
+</footer>
+
 </body>
 </html>
